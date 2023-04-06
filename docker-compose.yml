@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  be-wallet:
+    image: 'be-wallet'
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    env_file:
+      - /be-wallet/env/service.env
+    build:
+      context: .
+      dockerfile: Dockerfile-be
+  db:
+    image: 'postgres'
+    env_file:
+      - /be-wallet/env/db.env
+  fe-wallet:
+    image: fe-wallet
+    container_name: fe-wallet
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile-fe
+    ports:
+      - "3000:3000"

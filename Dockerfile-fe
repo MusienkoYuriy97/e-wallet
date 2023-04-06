@@ -1,0 +1,9 @@
+FROM nginx:stable-alpine
+
+COPY /fe-wallet/nginx /etc/nginx
+WORKDIR /fe-wallet
+COPY /fe-wallet/build /usr/share/nginx/html
+
+EXPOSE 3000
+
+CMD ["nginx", "-g", "daemon off;"]

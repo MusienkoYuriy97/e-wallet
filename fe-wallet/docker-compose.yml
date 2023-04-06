@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  fe-wallet:
+    # image: 97musienko/wallet-fe:latest - dockerhub image
+    image: fe-wallet
+    container_name: fe-wallet
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - web
+
+networks:
+  web:
+    driver: "bridge"

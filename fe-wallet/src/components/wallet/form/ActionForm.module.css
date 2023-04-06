@@ -1,0 +1,20 @@
+.actions_form {
+  display: block;
+  gap: 10rem;
+  justify-content: flex-end;
+}
+.actions_form label {
+  font-weight: 600;
+}
+
+.actions_form p {
+  color: black;
+}
+
+.actions_form label,
+.actions_form input {
+  color: black;
+  display: block;
+  width: 40%;
+  height: 30px;
+}

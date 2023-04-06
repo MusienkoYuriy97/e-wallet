@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  be-wallet:
+#    image: '97musienko/be-wallet:latest' - dockerhub image
+    image: 'be-wallet'
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    env_file:
+      - env/service.env
+    build:
+      dockerfile: Dockerfile
+  db:
+    image: 'postgres'
+    env_file:
+      - env/db.env

@@ -1,0 +1,64 @@
+.form {
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+
+.form > div {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
+  border-style: ridge;
+  border-color: rgb(235, 235, 235);
+}
+
+.form label,
+.form input {
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.form label,
+.form p {
+  color: rgb(235, 235, 235);
+}
+
+.form select {
+  width: max-content;
+}
+
+.form input,
+.form select {
+  font: inherit;
+  padding: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.1rem 1rem;
+  border-radius: 4px;
+  background-color: rgb(235, 235, 235);
+  color: black;
+  border: none;
+}
+
+.actions button[type="button"] {
+  background-color: rgb(235, 235, 235);
+  color: black;
+}
+
+.actions button:hover {
+  background-color: gray;
+}
+
+.actions button[type="button"]:hover {
+  background-color: gray;
+}

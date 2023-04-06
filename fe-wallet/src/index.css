@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #595c69 0%, #141a38 100%);
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

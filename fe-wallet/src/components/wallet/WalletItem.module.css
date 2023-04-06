@@ -1,0 +1,15 @@
+.item div {
+  display: inline-block;
+}
+
+div.right {
+  float: right;
+}
+
+div.right div {
+  display: block;
+}
+
+div.right button {
+  width: 150px;
+}

@@ -1,0 +1,40 @@
+.pagination {
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+}
+.pagination div {
+  display: inline;
+  padding: 10px;
+}
+
+.arrow i {
+  margin: 2px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right i {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left i {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow i:hover {
+  border: solid ghostwhite;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.disabled i:hover,
+.disabled i {
+  pointer-events: none;
+}

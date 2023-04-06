@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/wallet
+    username: postgres
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties.hibernate:
+      show_sql: true
+      format_sql: true
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+cors:
+  urls: '${CORS_URL:http://localhost:3000;http://localhost}'
