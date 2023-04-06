@@ -1,11 +1,7 @@
 # How to run e-wallet
 
 - download this project
-- navigate via CLI to fe-wallet
-- run:
-  - npm install
-  - npm run build
-- navigate back to /e-wallet
+- navigate to /e-wallet
 - run:
   - docker compose up -d
 
