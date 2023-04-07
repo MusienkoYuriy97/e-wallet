@@ -1,7 +1,7 @@
 # How to run e-wallet
 
 - download this project
-- navigate to /e-wallet
+- open terminal inside /e-wallet
 - run:
   - docker compose up -d
 

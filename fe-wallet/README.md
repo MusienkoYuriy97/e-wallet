@@ -4,8 +4,6 @@
 - download this project
 - navigate via CLI to root package
 - run:
-  - npm install
-  - npm run build
   - docker compose up -d
 
 run localhost:3000 in your browser

@@ -10,8 +10,8 @@ services:
     env_file:
       - /be-wallet/env/service.env
     build:
-      context: .
-      dockerfile: Dockerfile-be
+      context: /be-wallet
+      dockerfile: Dockerfile
   db:
     image: 'postgres'
     env_file:
@@ -21,7 +21,7 @@ services:
     container_name: fe-wallet
     restart: unless-stopped
     build:
-      context: .
-      dockerfile: Dockerfile-fe
+      context: /fe-wallet
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
